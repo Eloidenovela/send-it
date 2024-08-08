@@ -1,8 +1,11 @@
-add_rules("mode.debug", "mode.release")
+add_rules("mode.debug", "mode.release", "plugin.compile_commands.autoupdate")
+add_requires("rpclib")
 
 target("sh-it")
+    set_languages("c++17")
     set_kind("binary")
     add_files("src/*.cpp")
+    add_packages("rpclib")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
