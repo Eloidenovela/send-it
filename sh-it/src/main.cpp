@@ -1,27 +1,21 @@
-#include <cstddef>
-#include <cstdlib>
-#include <filesystem>
 #include <iostream>
-#include "rpc/client.h"
-#include "rpc/config.h"
-#include "rpc/server.h"
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <vector>
+#include "client/client.hpp"
 #include "server/server.hpp"
+#include "util/util.hpp"
 
 int main(int argc, char** argv) {
 
-    rpc::server server(8080);
+    if (util::is_equals(argv[1], "-R")) {
+        client::client client("localhost", 8080);
+        client.receive();
 
-    std::cout << argv[1] << std::endl;
-
-    server.bind("receive", [&] () {
-        return server::send(argv[1]);
-    });
-
-    server.run();
+    } else if (util::is_equals(argv[1], "-S")) {
+        rpc::server server(8080);
+        server.bind("receive", [&] () {
+            return server::send(argv[2]);
+        });
+        server.run();
+    }
     
     return 0;
 }

@@ -4,8 +4,10 @@
 #include "rpc/server.h"
 #include <exception>
 #include <fstream>
+#include <stdexcept>
 #include <string>
 #include <iostream>
+#include "../util/files.hpp"
 
 namespace client {
     class client {
@@ -16,16 +18,11 @@ namespace client {
 
             inline void receive() {
                 try {
-                    auto [file_name, file_content] = this->c.call("receive").as<std::tuple<std::string, std::string>>();
-                    auto file = std::ofstream(file_name, std::ios::out); 
-
-                    if (file.is_open()) {
-                        std::cout << "success" << std::endl;
-                    } else {
-                        std::cout << "failed" << std::endl;
-                    }
+                    auto [file_name, buffer] = this->c.call("receive").as<std::tuple<std::string, std::string>>();
+                    
+                    auto res = util::files::write(("./"+file_name), buffer);
                 } catch (const std::exception & e) {
-                    std::cerr << e.what() << std::endl;
+                    throw std::runtime_error("excepted: " + std::string(e.what()));
                 }
             }
     };

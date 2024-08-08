@@ -1,6 +1,9 @@
 #pragma once
 
+#include <cstring>
+#include <exception>
 #include <filesystem>
+#include <iostream>
 #include <iterator>
 #include <regex>
 #include <sstream>
@@ -24,14 +27,24 @@ namespace util {
     } 
 
     inline std::string absolute_path(const std::string & src) {
-        std::filesystem::path file_name(src);
-        auto absolute_path = std::filesystem::absolute(file_name.parent_path());
+        try {
+            std::filesystem::path file_name(src);
+            auto absolute_path = std::filesystem::absolute(file_name.parent_path());
 
-        std::stringstream path;
+            std::stringstream path;
 
-        path << absolute_path;
-        auto source = path.str();
+            path << absolute_path;
+            auto source = path.str();
 
-        return source.substr(1, std::size(source) - 3) + src.substr(2);
+            return source.substr(1, std::size(source) - 3) + src.substr(2);
+        } catch (const std::exception & e) {
+            std::cerr << e.what() << std::endl;
+        }
+
+        return nullptr;
+    }
+
+    inline bool is_equals(const char* p1, std::string p2) {
+        return (std::strcmp(p1, p2.c_str()) == 0);
     }
 }
