@@ -1,13 +1,12 @@
 
 # Sh-it
 
-This project implements a file transfer system using the UDP protocol, developed in C++. The goal is to provide a lightweight and efficient solution for transmitting files between devices on a local network or over the internet.
+This project implements a file transfer system using the RPC library, developed in C++. The goal is to provide a lightweight and efficient solution for transmitting files between devices on a local network.
 
 ## Features
 
 - **File Sending and Receiving**: Allows the transfer of files of any format and size.
-- **Control Protocols**: Implements error control and acknowledgment mechanisms, ensuring data integrity.
-- **Performance and Efficiency**: Leverages the advantages of UDP for fast and efficient transfers, with an optimized implementation in C++.
+- **Performance and Efficiency**: Leverages the advantages of RPC for fast and efficient transfers, with an optimized implementation in C++.
 - **Simple Interface**: Provides an intuitive command-line interface for easy use and configuration.
 
 ## Requirements
