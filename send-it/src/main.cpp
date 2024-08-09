@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 
         } else if (util::is_equals(argv[1], "-S")) {
             if (argv[2] != nullptr) {
-                rpc::server server(8080);
+                rpc::server server("0.0.0.0", 8080);
                 server.bind("receive", [&] () {
                     return server::send(argv[2]);
                 });
