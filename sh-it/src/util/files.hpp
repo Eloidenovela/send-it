@@ -42,16 +42,16 @@ namespace util {
                 
                 if (ifile.is_open()) {
                     try {
-                        auto content = std::string();
+                        auto buffer = std::string();
                         auto line = std::string();
 
                         while (std::getline(ifile, line)) {
-                            content += line + "\n";
+                            buffer += line + "\n";
                         }
 
                         ifile.close();
 
-                        return std::vector<char>(content.begin(), content.end());
+                        return std::vector<char>(buffer.begin(), buffer.end());
                     } catch (const std::exception & e) {
                         throw std::runtime_error("excepted: " + std::string(e.what()));
                     }
@@ -62,13 +62,13 @@ namespace util {
         }
 
         template <typename T>
-        inline int write(const std::string & file_name, T content) {
+        inline int write(const std::string & file_name, T buffer) {
             auto absolute_path = util::absolute_path(file_name);
             if (util::is_binary(file_name)) {
                 auto ofile = std::ofstream(absolute_path, std::ios::out | std::ios::binary);
 
                 if (ofile.is_open()) {
-                    ofile.write(content.data(), content.size());
+                    ofile.write(buffer.data(), buffer.size());
 
                     ofile.close();
                     return (0);
@@ -78,7 +78,7 @@ namespace util {
                 auto ofile = std::ofstream(absolute_path, std::ios::out);
 
                 if (ofile.is_open()) {
-                    ofile << content;
+                    ofile << buffer;
                     ofile.close();
                     return (0);
                 }

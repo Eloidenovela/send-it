@@ -22,7 +22,7 @@ namespace client {
                     
                     auto res = util::files::write(("./"+file_name), buffer);
                 } catch (const std::exception & e) {
-                    throw std::runtime_error("excepted: " + std::string(e.what()));
+                    std::cerr << "excepted: " + std::string(e.what()) << std::endl;
                 }
             }
     };
