@@ -4,7 +4,7 @@ add_requires("rpclib")
 target("send-it")
     set_languages("c++17")
     set_kind("binary")
-    add_files("src/*.cpp")
+    add_files("src/*.cpp", "src/*/*.cpp")
     add_packages("rpclib")
 
 --

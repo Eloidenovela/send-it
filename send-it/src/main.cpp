@@ -15,7 +15,8 @@ int main(int argc, char** argv) {
     } else {
 
         if (util::is_equals(argv[1], "-R")) {
-            client::client client("localhost", 8080);
+            // u need to especifie ip's server, client must to listen in ip server and port
+            client::client client("192.168.180.54", 8080);
             client.receive();
 
         } else if (util::is_equals(argv[1], "-S")) {
