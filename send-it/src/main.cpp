@@ -1,7 +1,3 @@
-#include <exception>
-#include <iostream>
-#include <iterator>
-#include <stdexcept>
 #include "client/client.hpp"
 #include "docs/docs.hpp"
 #include "error/error.hpp"
