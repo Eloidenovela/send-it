@@ -3,6 +3,7 @@
 #include <sstream>
 #include <exception>
 #include <filesystem>
+#include <iostream>
 
 namespace util {
     bool is_binary(std::string src) {
@@ -38,5 +39,4 @@ namespace util {
 
         return nullptr;
     }
-
 }

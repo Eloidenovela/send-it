@@ -1,4 +1,6 @@
 #include "docs.hpp"
+#include <iostream>
+#include "../error/error.hpp"
 
 namespace docs {
 

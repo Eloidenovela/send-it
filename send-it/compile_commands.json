@@ -1,31 +1,31 @@
 [
 {
-  "directory": "/home/eloide-novela/Documentos/Mine/send-it/send-it",
+  "directory": "/home/eloide-novela/Documentos/work/mine/send-it/send-it",
   "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
   "file": "src/main.cpp"
 },
 {
-  "directory": "/home/eloide-novela/Documentos/Mine/send-it/send-it",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/docs/docs.cpp.o", "src/docs/docs.cpp"],
-  "file": "src/docs/docs.cpp"
-},
-{
-  "directory": "/home/eloide-novela/Documentos/Mine/send-it/send-it",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/util/files.cpp.o", "src/util/files.cpp"],
-  "file": "src/util/files.cpp"
-},
-{
-  "directory": "/home/eloide-novela/Documentos/Mine/send-it/send-it",
+  "directory": "/home/eloide-novela/Documentos/work/mine/send-it/send-it",
   "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/util/util.cpp.o", "src/util/util.cpp"],
   "file": "src/util/util.cpp"
 },
 {
-  "directory": "/home/eloide-novela/Documentos/Mine/send-it/send-it",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/server/server.cpp.o", "src/server/server.cpp"],
-  "file": "src/server/server.cpp"
+  "directory": "/home/eloide-novela/Documentos/work/mine/send-it/send-it",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/util/files.cpp.o", "src/util/files.cpp"],
+  "file": "src/util/files.cpp"
 },
 {
-  "directory": "/home/eloide-novela/Documentos/Mine/send-it/send-it",
+  "directory": "/home/eloide-novela/Documentos/work/mine/send-it/send-it",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/docs/docs.cpp.o", "src/docs/docs.cpp"],
+  "file": "src/docs/docs.cpp"
+},
+{
+  "directory": "/home/eloide-novela/Documentos/work/mine/send-it/send-it",
   "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/client/client.cpp.o", "src/client/client.cpp"],
   "file": "src/client/client.cpp"
+},
+{
+  "directory": "/home/eloide-novela/Documentos/work/mine/send-it/send-it",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I", "/home/eloide-novela/.xmake/packages/r/rpclib/v2.3.0/cd9a29cac23a478da714214c55a59c0c/include", "-DNDEBUG", "-o", "build/.objs/send-it/linux/x86_64/release/src/server/server.cpp.o", "src/server/server.cpp"],
+  "file": "src/server/server.cpp"
 }]
