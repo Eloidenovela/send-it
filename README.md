@@ -26,7 +26,3 @@ This project implements a file transfer system using the RPC library, developed 
 ## Contributions
 
 Contributions are welcome! Feel free to open issues to report bugs or suggest improvements, and submit pull requests to contribute to the project.
-
----
-
-Let me know if you'd like any further changes or additions!
